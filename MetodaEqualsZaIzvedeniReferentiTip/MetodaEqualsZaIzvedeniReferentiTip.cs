@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace Vsite.CSharp
 {
     //  Definirati da klasa Student implementira sučelje IEquatable<Student>
-    public class Student : Osoba,IEquatable<Student>
+    public class Student : Osoba,IEquatable<Student>,ICloneable
     {
         public Student(string ime, int matičniBroj, string smjer, int godina) : base(ime, matičniBroj)
         {
