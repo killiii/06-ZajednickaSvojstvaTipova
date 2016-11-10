@@ -26,7 +26,10 @@ namespace Vsite.CSharp
             //OPASNO return m_ime.Equals(other.m_ime);
 
         }
-
+        public override int GetHashCode()
+        {
+            return m_ime.GetHashCode() ^ m_matičniBroj;
+        }
         //  Pregaziti (override) metodu Equals(object) tako da poziva Equals(Osoba)
         public override bool Equals(object obj)
         {
